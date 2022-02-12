@@ -1,13 +1,8 @@
-// const name = require("./utils");
-
-// console.log(name);
-
-// const add = require("./utils");
-
-// const sum = add(2, 3);
-
-// console.log(sum);
+const validator = require("validator");
 
 const getNotes = require("./notes");
 
 console.log(getNotes());
+
+// console.log(validator.isEmail("kumartest.com"));
+console.log(validator.isURL("kumartestcom"));
