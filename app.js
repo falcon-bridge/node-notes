@@ -1,5 +1,13 @@
-const fs = require("fs");
+// const name = require("./utils");
 
-// fs.writeFileSync("notes.txt", "Hello World !");
+// console.log(name);
 
-fs.appendFileSync("notes.txt", " I am Aayush");
+// const add = require("./utils");
+
+// const sum = add(2, 3);
+
+// console.log(sum);
+
+const getNotes = require("./notes");
+
+console.log(getNotes());
