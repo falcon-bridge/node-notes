@@ -2,7 +2,7 @@ const fs = require("fs");
 
 const chalk = require("chalk");
 
-const getNotes = (e) => {
+const getNotes = () => {
   return "Your Notes...";
 };
 
