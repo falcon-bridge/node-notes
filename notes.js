@@ -27,9 +27,11 @@ const addNote = (title, body) => {
   const notes = loadNotes();
 
   // if the note title already exiss, don't add it.
-  const duplicateNotes = notes.filter((note) => note.title === title);
+  // const duplicateNotes = notes.filter((note) => note.title === title);
+  const duplicateNote = notes.find((note) => note.title === title);
 
-  if (duplicateNotes.length === 0) {
+  // if (duplicateNotes.length === 0) {
+  if (!duplicateNote) {
     notes.push({ title, body });
     saveNotes(notes);
     console.log(chalk.green.bold.inverse("New note added !"));
